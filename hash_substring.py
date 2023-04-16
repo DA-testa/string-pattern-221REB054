@@ -11,9 +11,15 @@ def read_input():
 
     if "F" in test:
         fails = open("./tests/06", "r")
-        pattern = fails.readline().rstrip()
-        text = fails.readline().rstrip()
-    
+        f = fails.read()
+        f = f.split('\n')
+        pattern = f[0]
+        text = f[1]
+
+    pattern = pattern.strip()
+    text = text.strip()
+
+
     return (pattern, text)
 
 def print_occurrences(output): 
