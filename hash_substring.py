@@ -3,7 +3,7 @@
 
 
 def read_input():
-    test = input("F or I : ")
+    test = input()
 
     if "I" in test:
         pattern = input()
